@@ -29,6 +29,7 @@ const courses = {
         color: 'from-red-600 via-orange-600 to-red-400',
         instructor: 'المهندسة المبدعة هبه عبيد',
         instructorTitle: 'مهندسة انظمة الحاسوب',
+        instructorImage: "Hiba.jpg",
         //duration: '14 أسبوع',
         //lessons: '56 محاضرة',
         courseDetails: 'دورة شاملة في Java تغطي OOP، Spring Framework، وبناء تطبيقات مؤسسية. مناسبة للراغبين في العمل بالشركات الكبرى.'
@@ -40,6 +41,7 @@ const courses = {
         color: 'from-purple-600 via-pink-500 to-purple-400',
         instructor: 'المهندسة المبدعة الهام قصراوي',
         instructorTitle: 'مهندسة انظمة الحاسوب',
+        instructorImage: "ilham.png",
         //duration: '16 أسبوع',
         //lessons: '64 محاضرة',
         courseDetails: 'تعلم C++ من الأساسيات حتى البرمجة المتقدمة. مثالي لتطوير الألعاب، الأنظمة المدمجة، والتطبيقات عالية الأداء.'
@@ -62,6 +64,7 @@ const courses = {
         color: 'from-orange-500 via-red-500 to-pink-400',
         instructor: 'المهندسة المبدعة الهام قصراوي',
         instructorTitle: 'مهندسة انظمة الحاسوب',
+        instructorImage: "ilham.png",
         //duration: '16 أسبوع',
         //lessons: '64 محاضرة',
         courseDetails: 'ابدأ رحلتك في تطوير الويب بتعلم HTML5 و CSS3. ستتقن بناء مواقع متجاوبة وجميلة من الصفر.'
@@ -130,7 +133,7 @@ function showCourseDetails(courseKey) {
     document.getElementById('modalIcon').textContent = course.icon;
     document.getElementById('modalTitle').textContent = course.name;
     document.getElementById('modalDesc').textContent = course.description;
-    document.getElementById("instructorImage").src = "hiba.jpg";
+    document.getElementById("instructorImage").src = course.instructorImage;
     document.getElementById('instructorName').textContent = course.instructor;
     document.getElementById('instructorTitle').textContent = course.instructorTitle;
     document.getElementById('courseDuration').textContent = course.duration;
