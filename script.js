@@ -180,3 +180,4 @@ document.getElementById('courseModal').addEventListener('click', function(e) {
         closeCourseDetails();
     }
 });
+
