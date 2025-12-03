@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCode Academy </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="1000619202_27871952cc8d0846efa4121c4d0c75e9-٢٦__٨__٢٠٢٥ ٨_٤٧_٥٧ م.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="1000619202_27871952cc8d0846efa4121c4d0c75e9-٢٦__٨__٢٠٢٥ ٨_٤٧_٥٧ م.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="1000619202_27871952cc8d0846efa4121c4d0c75e9-٢٦__٨__٢٠٢٥ ٨_٤٧_٥٧ م.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="min-h-screen bg-black text-white overflow-x-hidden">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20"></div>
+        <div id="mouseGlow" class="absolute w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 left-20 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-20 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl animate-pulse"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-black/40 backdrop-blur-2xl z-50 border-b border-white/10">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            
+            
+            <button id="mobileMenuBtn" class="md:hidden text-white">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            
+            <nav class="hidden md:flex gap-8 items-center">
+                <a href="#languages" class="hover:text-purple-400 transition font-semibold">الدورات</a>
+                <a href="#features" class="hover:text-purple-400 transition font-semibold">المميزات</a>
+                <button id="startBtn" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-6 py-2.5 rounded-full font-bold transition transform hover:scale-105 shadow-lg shadow-purple-500/50">
+                    ابدأ الآن
+                </button>
+            </nav>
+
+            <div class="flex items-center gap-3 group cursor-pointer" dir="ltr">
+
+              <!-- اللوجو -->
+              <img src="1000619202_27871952cc8d0846efa4121c4d0c75e9-٢٦__٨__٢٠٢٥ ٨_٤٧_٥٧ م.png" 
+                   alt="Logo" 
+                   class="w-12 h-12 object-contain">
+          
+              <!-- النص -->
+              <span class="text-2xl font-black gradient-text">
+                  NextCode Academy
+              </span>
+          
+              <!-- السباركل -->
+              <i class="fas fa-sparkles text-yellow-400 text-lg animate-pulse"></i>
+          
+          </div>
+          
+        </div>
+        
+        <nav id="mobileMenu" class="hidden md:hidden bg-black/90 backdrop-blur-xl p-6 flex flex-col gap-4 border-t border-white/10">
+            <a href="#languages" class="hover:text-purple-400 font-semibold text-center">الدورات</a>
+            <a href="#features" class="hover:text-purple-400 font-semibold text-center">المميزات</a>
+            <button class="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 rounded-full font-bold">
+                ابدأ الآن
+            </button>
+        </nav>
+    </header>
+
+    <div class="relative z-10">
+        <!-- Hero Section -->
+        <section class="pt-40 pb-32 px-6">
+            <div class="container mx-auto text-center">
+                <div class="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/50 rounded-full backdrop-blur-sm">
+                    <span class="text-purple-300 font-semibold flex items-center gap-2 justify-center">
+                        <i class="fas fa-sparkles"></i>
+                        أكاديمية البرمجة الأولى في المنطقة
+                    </span>
+                </div>
+                
+                <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight">
+                    <span class="gradient-text inline-block">
+                        رحلتك نحو
+                    </span>
+                    <br />
+                    
+                    <span class="gradient-text inline-block">
+                        الاحتراف تبدأ هنا
+                    </span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    تعلم البرمجة من الصفر حتى الاحتراف مع <span class="text-purple-400 font-bold">مدربين معتمدين</span> عبر محاضرات مباشرة تفاعلية
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <button id="consultationBtn" class="group bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-purple-700 hover:via-pink-700 hover:to-purple-700 px-10 py-5 rounded-full text-xl font-bold transition transform hover:scale-105 shadow-2xl shadow-purple-500/50 flex items-center gap-3">
+                        <i class="fas fa-comment-alt"></i>
+                        احجز استشارة مجانية
+                        <i class="fas fa-arrow-left group-hover:translate-x-1 transition"></i>
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                    <div class="bg-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:border-purple-500/50 transition group">
+                        <div class="text-purple-400 mb-2 flex justify-center group-hover:scale-110 transition">
+                            <i class="fas fa-award text-2xl"></i>
+                        </div>
+                        <div class="text-3xl md:text-4xl font-black gradient-text mb-1">
+                            100+
+                        </div>
+                        <div class="text-sm text-gray-400">طالب متخرج</div>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:border-purple-500/50 transition group">
+                        <div class="text-purple-400 mb-2 flex justify-center group-hover:scale-110 transition">
+                            <i class="fas fa-star text-2xl"></i>
+                        </div>
+                        <div class="text-3xl md:text-4xl font-black gradient-text mb-1">
+                            2+
+                        </div>
+                        <div class="text-sm text-gray-400">مدرب محترف</div>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl p-6 rounded-2xl border border-white/10 hover:border-purple-500/50 transition group">
+                        <div class="text-purple-400 mb-2 flex justify-center group-hover:scale-110 transition">
+                            <i class="fas fa-sparkles text-2xl"></i>
+                        </div>
+                        <div class="text-3xl md:text-4xl font-black gradient-text mb-1">
+                            98%
+                        </div>
+                        <div class="text-sm text-gray-400">نسبة الرضا</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="py-24 px-6 relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-purple-900/10 to-transparent"></div>
+            <div class="container mx-auto relative">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-6xl font-black mb-4 gradient-text">
+                        لماذا NextCode؟
+                    </h2>
+                    <p class="text-gray-400 text-lg">نقدم لك تجربة تعليمية لا مثيل لها</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+                        <div class="bg-gradient-to-r from-purple-600 to-pink-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition shadow-lg">
+                            <i class="fas fa-video text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">محاضرات مباشرة عبر Zoom</h3>
+                        <p class="text-gray-400 leading-relaxed">تفاعل مباشر مع أفضل المدربين</p>
+                    </div>
+                    <div class="group bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+                        <div class="bg-gradient-to-r from-blue-600 to-cyan-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition shadow-lg">
+                            <i class="fas fa-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">مشاريع عملية حقيقية</h3>
+                        <p class="text-gray-400 leading-relaxed">اكتسب خبرة فعلية من اليوم الأول</p>
+                    </div>
+                    <div class="group bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+                        <div class="bg-gradient-to-r from-orange-600 to-yellow-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition shadow-lg">
+                            <i class="fas fa-bolt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">تعلم سريع وفعال</h3>
+                        <p class="text-gray-400 leading-relaxed">منهجية مبتكرة توصلك للاحتراف</p>
+                    </div>
+                    <div class="group bg-white/5 backdrop-blur-xl p-8 rounded-3xl border border-white/10 hover:border-purple-500/50 transition transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/20">
+                        <div class="bg-gradient-to-r from-green-600 to-emerald-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition shadow-lg">
+                            <i class="fas fa-comments text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">دعم على مدار الساعة</h3>
+                        <p class="text-gray-400 leading-relaxed">تواصل فوري عبر WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages" class="py-24 px-6">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-6xl font-black mb-4">
+                        <span class="gradient-text">
+                            اختر مسارك
+                        </span>
+                    </h2>
+                    <p class="text-gray-400 text-lg">لغات البرمجة الأكثر طلباً في سوق العمل</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Python Course
+                    <div class="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 rounded-3xl border-2 cursor-pointer transition transform hover:scale-105 overflow-hidden border-white/10 hover:border-purple-500/50">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 shadow-lg">
+                                الأكثر طلباً
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 opacity-0 group-hover:opacity-10 transition rounded-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-7xl group-hover:scale-110 transition">🐍</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-3 group-hover:text-purple-400 transition">Python</h3>
+                            <p class="text-gray-400 mb-6 leading-relaxed">مثالي للمبتدئين والذكاء الاصطناعي</p>
+                            <div class="flex gap-3 mb-6">
+                                <button onclick="showCourseDetails('python')" class="flex-1 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-xl font-bold transition border border-white/20">
+                                    التفاصيل
+                                </button>
+                                <button onclick="contactWhatsApp('Python')" class="flex-1 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 hover:opacity-90 px-4 py-3 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    احجز
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                     -->
+
+                    <!-- JavaScript Course 
+                    <div class="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 rounded-3xl border-2 cursor-pointer transition transform hover:scale-105 overflow-hidden border-white/10 hover:border-purple-500/50">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 shadow-lg">
+                                الأساسي للويب
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 opacity-0 group-hover:opacity-10 transition rounded-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-7xl group-hover:scale-110 transition">⚡</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-3 group-hover:text-purple-400 transition">JavaScript</h3>
+                            <p class="text-gray-400 mb-6 leading-relaxed">قوة تطوير الويب الحديث</p>
+                            <div class="flex gap-3 mb-6">
+                                <button onclick="showCourseDetails('javascript')" class="flex-1 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-xl font-bold transition border border-white/20">
+                                    التفاصيل
+                                </button>
+                                <button onclick="contactWhatsApp('JavaScript')" class="flex-1 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-400 hover:opacity-90 px-4 py-3 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    احجز
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!-- Java Course -->
+                    <div class="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 rounded-3xl border-2 cursor-pointer transition transform hover:scale-105 overflow-hidden border-white/10 hover:border-purple-500/50">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-red-600 via-orange-600 to-red-400 shadow-lg">
+                                للمحترفين
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-600 to-red-400 opacity-0 group-hover:opacity-10 transition rounded-3xl"></div>
+                        <div class="relative">
+                          <div class="flex items-center justify-end mb-6">
+                                <span class="text-7xl group-hover:scale-110 transition">☕</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-3 group-hover:text-purple-400 transition text-left">Java</h3>
+
+                            <p class="text-gray-400 mb-6 leading-relaxed">عملاق التطبيقات المؤسسية</p>
+                            <div class="flex gap-3 mb-6">
+                                <button onclick="showCourseDetails('java')" class="flex-1 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-xl font-bold transition border border-white/20">
+                                    التفاصيل
+                                </button>
+                                <button onclick="contactWhatsApp('Java')" class="flex-1 bg-gradient-to-r from-red-600 via-orange-600 to-red-400 hover:opacity-90 px-4 py-3 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    احجز
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C++ Course -->
+                    <div class="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 rounded-3xl border-2 cursor-pointer transition transform hover:scale-105 overflow-hidden border-white/10 hover:border-purple-500/50">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-purple-400 shadow-lg">
+                                قوة خارقة
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-400 opacity-0 group-hover:opacity-10 transition rounded-3xl"></div>
+                        <div class="relative">
+                          <div class="flex items-center justify-end mb-6">
+                                <span class="text-7xl group-hover:scale-110 transition">⚙️</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-3 group-hover:text-purple-400 transition text-left">C++</h3>
+                            <p class="text-gray-400 mb-6 leading-relaxed">أقوى لغة للأداء العالي</p>
+                            <div class="flex gap-3 mb-6">
+                                <button onclick="showCourseDetails('cpp')" class="flex-1 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-xl font-bold transition border border-white/20">
+                                    التفاصيل
+                                </button>
+                                <button onclick="contactWhatsApp('C++')" class="flex-1 bg-gradient-to-r from-purple-600 via-pink-500 to-purple-400 hover:opacity-90 px-4 py-3 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    احجز
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- React Course 
+                    <div class="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 rounded-3xl border-2 cursor-pointer transition transform hover:scale-105 overflow-hidden border-white/10 hover:border-purple-500/50">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-400 shadow-lg">
+                                عصري وسريع
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-400 opacity-0 group-hover:opacity-10 transition rounded-3xl"></div>
+                        <div class="relative">
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-7xl group-hover:scale-110 transition">⚛️</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-3 group-hover:text-purple-400 transition">React</h3>
+                            <p class="text-gray-400 mb-6 leading-relaxed">تقنية الواجهات الأكثر شعبية</p>
+                            <div class="flex gap-3 mb-6">
+                                <button onclick="showCourseDetails('react')" class="flex-1 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-xl font-bold transition border border-white/20">
+                                    التفاصيل
+                                </button>
+                                <button onclick="contactWhatsApp('React')" class="flex-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-400 hover:opacity-90 px-4 py-3 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    احجز
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                    <!-- HTML/CSS Course -->
+                    <div class="group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-2xl p-8 rounded-3xl border-2 cursor-pointer transition transform hover:scale-105 overflow-hidden border-white/10 hover:border-purple-500/50">
+                        <div class="absolute top-4 right-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-gradient-to-r from-orange-500 via-red-500 to-pink-400 shadow-lg">
+                                نقطة البداية
+                            </span>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-r from-orange-500 via-red-500 to-pink-400 opacity-0 group-hover:opacity-10 transition rounded-3xl"></div>
+                        <div class="relative">
+                          <div class="flex items-center justify-end mb-6">
+                                <span class="text-7xl group-hover:scale-110 transition">🎨</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-3 group-hover:text-purple-400 transition text-left">HTML/CSS</h3>
+                            <p class="text-gray-400 mb-6 leading-relaxed">أساس كل مطور ويب ناجح</p>
+                            <div class="flex gap-3 mb-6">
+                                <button onclick="showCourseDetails('html')" class="flex-1 bg-white/10 hover:bg-white/20 px-4 py-3 rounded-xl font-bold transition border border-white/20">
+                                    التفاصيل
+                                </button>
+                                <button onclick="contactWhatsApp('HTML/CSS')" class="flex-1 bg-gradient-to-r from-orange-500 via-red-500 to-pink-400 hover:opacity-90 px-4 py-3 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                                    <i class="fab fa-whatsapp"></i>
+                                    احجز
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 px-6 relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-900/20 via-pink-900/20 to-blue-900/20"></div>
+            <div class="container mx-auto text-center relative">
+                <i class="fas fa-sparkles text-yellow-400 text-4xl mx-auto mb-6 block animate-pulse"></i>
+                <h2 class="text-5xl md:text-6xl font-black mb-6 gradient-text">
+                    جاهز لتغيير مستقبلك؟
+                </h2>
+                <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    انضم لمئات الطلاب الذين حققوا أحلامهم في عالم البرمجة
+                </p>
+                <button onclick="contactWhatsApp('الدورة')" class="group bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 px-12 py-6 rounded-full text-xl font-black transition transform hover:scale-110 shadow-2xl shadow-green-500/50 flex items-center gap-3 mx-auto">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل معنا عبر WhatsApp
+                    <i class="fas fa-arrow-left group-hover:translate-x-1 transition"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black/50 backdrop-blur-xl py-12 px-6 border-t border-white/10">
+          <div class="container mx-auto text-center">
+      
+              <div class="flex items-center justify-center gap-3 mb-4" dir="ltr">
+                
+      
+                  <img src="1000619202_27871952cc8d0846efa4121c4d0c75e9-٢٦__٨__٢٠٢٥ ٨_٤٧_٥٧ م.png" 
+                       alt="Logo" 
+                       class="w-12 h-12 object-contain">
+      
+                  <span class="text-2xl font-black gradient-text">
+                      NextCode Academy
+                  </span>
+              </div>
+      
+              <p class="text-gray-400 mb-6">نصنع المبرمجين المحترفين</p>
+              <p class="text-gray-500">جميع الحقوق محفوظة.<br> 
+                &copy; 2025 NextCode Academy.
+                </p>
+          </div>
+      </footer>
+      
+    </div>
+
+    <!-- Course Details Modal -->
+    <div id="courseModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-gradient-to-br from-slate-900 to-slate-800 max-w-2xl w-full rounded-3xl border-2 border-purple-500/50 shadow-2xl shadow-purple-500/20 overflow-hidden">
+            <!-- Header -->
+            <div id="modalHeader" class="p-8 relative">
+                <button onclick="closeCourseDetails()" class="absolute top-4 right-4 bg-black/30 hover:bg-black/50 rounded-full p-2 transition">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex items-center gap-4">
+                    <span id="modalIcon" class="text-7xl"></span>
+                    <div>
+                        <h3 id="modalTitle" class="text-4xl font-black text-white mb-2"></h3>
+                        <p id="modalDesc" class="text-white/90 text-lg"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-8">
+                <!-- Instructor Info -->
+                <div class="bg-white/5 rounded-2xl p-6 mb-6 border border-white/10">
+                  <div class="flex items-center gap-4 mb-4">
+              
+                      <!-- صورة المهندس بدلاً من أول حرف -->
+                      <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-purple-500/40 shadow-lg">
+                          <img id="instructorImage" src="Hiba.jpg" alt="Instructor" class="w-full h-full object-cover">
+                      </div>
+              
+                      <div>
+                          <h4 id="instructorName" class="text-xl font-bold text-white"></h4>
+                          <p id="instructorTitle" class="text-purple-400"></p>
+                      </div>
+                  </div>
+              </div>
+              
+
+                <!-- Course Stats -->
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+                        <div class="text-purple-400 text-sm mb-1">المدة</div>
+                        <div id="courseDuration" class="text-2xl font-bold"></div>
+                    </div>
+                    <div class="bg-white/5 rounded-xl p-4 border border-white/10">
+                        <div class="text-purple-400 text-sm mb-1">عدد المحاضرات</div>
+                        <div id="courseLessons" class="text-2xl font-bold"></div>
+                    </div>
+                </div>
+
+                <!-- Course Description -->
+                <div class="mb-6">
+                    <h4 class="text-xl font-bold text-white mb-3">نظرة عامة</h4>
+                    <p id="courseDetails" class="text-gray-300 leading-relaxed"></p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex gap-4">
+                    <button id="modalWhatsAppBtn" class="flex-1 bg-gradient-to-r from-blue-600 to-cyan-600 hover:opacity-90 px-6 py-4 rounded-xl font-bold transition shadow-xl flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp"></i>
+                        سجل الآن عبر WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
